@@ -1,142 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
-  <head>
-        <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ІТ коледж Львівської політехніки</title>
-    
-  </head>
-  <body>
-    <header>
-      <div class="channel-header">
-        <section class="channel-avatar">
-         
-          <img
-            src="nulp_logo.png"
-            alt="Логотип ІТ коледж Львівської політехніки"
-            height="300"
-            width="300"
-          />
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Card Form</title>
+</head>
+<body>
+  <h1>Student Card FORM</h1>
 
-        <section class="channel-info">
-          <h1 class="channel-title">ІТ коледж Львівської політехніки</h1>
-          <p class="channel-stats">
-            @itcollegelviv · Підписалося 105 користувачів · 58 відео
-          </p>
-          <p class="channel-description">
-            ІТ коледж Львівської політехніки
-            <span class="more-text">...більше</span>
-          </p>
-          <a href="#" class="channel-links"
-            >itcollege.lviv.ua і ще 2 посилання</a
-          >
+  <form>
+    <h2>Personal Information</h2>
+    <fieldset>
+      <legend>Provide your details</legend>
+      <label>Full Name: <input type="text" name="fullname"></label><br><br>
+      <label>Email: <input type="email" name="email"></label><br><br>
+      <label>Password: <input type="password" name="password"></label><br><br>
+      <label>Age: <input type="number" name="age" min="1"></label><br><br>
+      <label>Date of Birth: <input type="date" name="dob"></label><br><br>
 
-          <button class="subscribe-btn">Підписатися</button>
-        </section>
-      </div>
-      <section>
-        <h2>
-Відео
-        </h2>
-        <video width="80%" height="540px" controls>
-          <source src="video.mp4" type="video/mp4" />
-        </video>
-      </section>
-      <section id="audio">
-        <h2>audio</h2>
-        <audio controls>
-          <source src="videoplayback.m4a" control />
-        </audio>
-      </section>
-      <section id="">
-        <h2>Youtube</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/-zCkzxV9hO8?si=9DsT8tfQu2m7Hz4B"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </section>
-    </header>
-    <main>
-        <article>
-        <section>
-            <h2>"Університети та коледжі Львова"</h2>
-<iframe src="https://www.google.com/maps/d/embed?mid=1_umAODgomUdddMWFZbefQrlFyi2mjjc&ehbc=2E312F" width="640" height="480"></iframe>
-        </section>
+      Gender:<br>
+      <p><label><input type="radio" name="gender" value="male"> Male</label></p>
+      <p><label><input type="radio" name="gender" value="female"> Female</label></p>
+      <p><label><input type="radio" name="gender" value="other"> Other</label></p><br><br>
 
-    </article>
-<aside class="sidebar">
-    <h3 class="sidebar-title">Спеціальності та освітні програми</h3>
-    
-    <ul class="video-list">
-        <li>
-            <!-- Замініть href="#" на реальні посилання на YouTube -->
-            <a href="#" class="video-link">
-                <div class="video-thumbnail">
-                    <!-- Замініть src="..." на шляхи до ваших картинок-прев'ю -->
-                    <img src="./comp-future.jpg" alt="Вивчай спеціальність майбутнього">
-                    <span class="video-time">0:35</span>
-                </div>
-                <p class="video-title">Вивчай спеціальність майбутнього...</p>
-            </a>
-        </li>
-        
-        <li>
-            <a href="#" class="video-link">
-                <div class="video-thumbnail">
-                    <img src="./comp-science.webp" alt="122 Комп'ютерні науки">
-                    <span class="video-time">0:28</span>
-                </div>
-                <p class="video-title">122 Комп'ютерні науки. Computer Science. Вступ у IT...</p>
-            </a>
-        </li>
-        
-        <li>
-            <a href="#" class="video-link">
-                <div class="video-thumbnail">
-                    <img src="./telecom.jpg" alt="172 Телекомунікації та радіотехніка">
-                    <span class="video-time">0:31</span>
-                </div>
-                <p class="video-title">172 Телекомунікації та радіотехніка —...</p>
-            </a>
-        </li>
-        
-        <li>
-            <a href="#" class="video-link">
-                <div class="video-thumbnail">
-                    <img src="./icom.jpg" alt="172 Телекомунікації та радіотехніка (Інжиніринг)">
-                    <span class="video-time">0:31</span>
-                </div>
-                <p class="video-title">172 Телекомунікації та радіотехніка — Інжиніринг та..</p>
-            </a>
-        </li>
-        
-        <li>
-            <a href="#" class="video-link">
-                <div class="video-thumbnail">
-                    <img src="./cyb-secy.png" alt="029 Інформаційна, бібліотечна та архівна справа">
-                    <span class="video-time">0:33</span>
-                </div>
-                <p class="video-title">029 Інформаційна, бібліотечна та архівна справа</p>
-            </a>
-        </li>
-    </ul>
-</aside>
-    </main>
-  </body>
+      Languages Known:<br>
+      <p><label><input type="checkbox" name="lang" value="english"> English</label><p/>
+      <p><label><input type="checkbox" name="lang" value="spanish"> Spanish</label></p>
+      <p><label><input type="checkbox" name="lang" value="french"> French</label></p><br><br>
+
+      <label>Country:
+        <select name="country">
+          <option value="">Select your country</option>
+          <option value="ukraine">Ukraine</option>
+          <option value="usa">USA</option>
+          <option value="france">France</option>
+        </select>
+      </label>
+    </fieldset>
+    <h2>College Subjects</h2>
+    <fieldset>
+      <legend>Select your subjects</legend>
+       <label for="subjects">Choose subjects:</label><br>
+  <select id="subjects" name="subjects" multiple size="4">
+    <option>Mathematics</option>
+    <option>Computer Science</option>
+    <option>Physics</option>
+    <option>History</option>
+    <option>Chemistry</option>
+  </select>
+
+      <label>Rate your interest in Computer Science:
+        <input type="range" name="interest_cs" min="0" max="10">
+      </label>
+    </fieldset>
+<h2>Skills Assessment</h2>
+    <fieldset>
+      <legend>Assessment your Skills</legend>
+      <label>Describe your skills:<br>
+        <textarea name="skills" rows="4" cols="40"></textarea>
+      </label><br><br>
+
+      <label>Upload your resume:
+        <input type="file" name="resume">
+      </label><br><br>
+
+      <label>Pick your favorite color:
+        <input type="color" name="favcolor">
+      </label><br><br>
+
+      <label>Percent of study time:
+        <input type="number" name="study_percent" min="0" max="100"> %
+      </label>
+    </fieldset>
+
+    <br>
+    <button type="submit">Submit Survey</button>
+  </form>
+
+  <footer>
+    <p>© Student card by Vasily. All rights reserved.</p>
+  </footer>
+</body>
 </html>
