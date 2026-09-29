@@ -1,53 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mt41L2Zel</title>
+  <meta charset="UTF-8">
+  <title>Student Card Form</title>
 </head>
 
 <body>
-    <header>
-        <h1>Програмуванні в інфокомунікаціях</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Головна</a></li>
-                <li><a href="#lab">Лабораторні роботи</a></li>
-                <ol>
-                    <li><a href="/lab_1_Z/index.html">Лабораторна робота №1</a></li>
+  <h1>Student Card FORM</h1>
 
-                    <li><a href="/lab_2_Z/index.html">Лабораторна робота №2</a></li>
+  <form>
+    <h2>Personal Information</h2>
+    <fieldset>
+      <legend>Provide your details</legend>
+      <label>Full Name: <input type="text" name="fullname" required></label><br><br>
+      <label>Email: <input type="email" name="email" required></label><br><br>
+      <label>Password: <input type="password" name="password" required></label><br><br>
+      <label>Age: <input type="number" name="age" min="1" required></label><br><br>
+      <label>Date of Birth: <input type="date" name="dob" required></label><br><br>
 
-                     <li><a href="http://127.0.0.1:5500/lab3/index.html#">Лабораторна робота №3</a></li>
-                    <li><a href="/lab_4/index.html">Лабораторна робота №4</a></li>
-                </ol>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <h2 id="lab">Лабораторні</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur excepturi facilis error deserunt
-                eligendi expedita quod! Enim debitis ex vero harum dicta id, illo minus iusto earum! Odio, reiciendis
-                praesentium? </p>
-        </article>
-    </main>
+      Gender:<br>
+      <p><label><input type="radio" name="gender" value="male" required> Male</label></p>
+      <p><label><input type="radio" name="gender" value="female" required> Female</label></p>
+      <p><label><input type="radio" name="gender" value="other" required> Other</label></p><br><br>
 
-    <aside>
-        <h2>Дисципліни</h2>
-        <ul>
-            <li><a href="1">Системне програмування</a></li>
-            <li><a href="1">Бази даних</a></li>
-            <li><a href="1">Internet речей</a></li>
-            <li><a href="1">Захист інформації Internet речей</a></li>
-        </ul>
-    </aside>
+      Languages Known:<br>
+      <p><label><input type="checkbox" name="lang" value="english" required> English</label>
+        <p />
+      <p><label><input type="checkbox" name="lang" value="spanish" required> Spanish</label></p>
+      <p><label><input type="checkbox" name="lang" value="french" required> French</label></p><br><br>
+
+      <label>Country:
+        <select name="country" required>
+          <option value="">Select your country</option>
+          <option value="ukraine">Ukraine</option>
+          <option value="usa">USA</option>
+          <option value="france">France</option>
+        </select>
+      </label>
+    </fieldset>
+    <h2>College Subjects</h2>
+    <fieldset>
+      <legend>Select your subjects</legend>
+      <label for="subjects">Choose subjects:</label><br>
+      <select id="subjects" name="subjects" multiple size="4">
+        <option>Mathematics</option>
+        <option>Computer Science</option>
+        <option>Physics</option>
+        <option>History</option>
+        <option>Chemistry</option>
+      </select>
+
+      <label>Rate your interest in Computer Science:
+        <input type="range" name="interest_cs" min="0" max="10">
+      </label>
+    </fieldset>
+    <h2>Skills Assessment</h2>
+    <fieldset>
+      <legend>Assessment your Skills</legend>
+      <label>Describe your skills:<br>
+        <textarea name="skills" rows="4" cols="40"></textarea>
+      </label><br><br>
+
+      <label>Upload your resume:
+        <input type="file" name="resume">
+      </label><br><br>
+
+      <label>Pick your favorite color:
+        <input type="color" name="favcolor">
+      </label><br><br>
+
+      <label>Percent of study time:
+        <input type="number" name="study_percent" min="0" max="100"> %
+      </label>
+    </fieldset>
 
 
-    <footer>
-        <p>&copy; 2026 IT college.</p>
-    </footer>
+    <button type="submit">Submit Survey</button>
+  </form>
+
+  <footer>
+    <p>© Student card by Vasily. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
