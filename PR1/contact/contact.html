@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Простий стиль для форми */
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #9a2d2d;
+      border-radius: 8px;
+      background: #1c8b68;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #292020;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    .contact-info {
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<nav>
+    <ul>
+      <li><a href="../index.html">← Повернутися на головну</a></li>
+    </ul>
+  </nav>
+  <!-- Header -->
+  <header>
+    <h1>Контакти</h1>
+    <p>Маєте запитання чи хочете поділитися своїми враженнями? Напишіть нам!</p>
+  </header>
+
+
+  <!-- Форма зворотного зв’язку -->
+  <section>
+    <form action="send-message.php" method="post">
+      <label for="name">Ваше ім’я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Ваш email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Повідомлення:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Надіслати</button>
+    </form>
+  </section>
+
+  <!-- Додаткова контактна інформація -->
+  <section class="contact-info">
+    <h2>Інші способи зв’язку</h2>
+    <p>Email: travelblog@example.com</p>
+    <p>Телефон: +380 67 123 45 67</p>
+    <p>Соцмережі: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+  </section>
+
+</body>
+</html>
