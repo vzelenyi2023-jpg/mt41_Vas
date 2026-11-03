@@ -107,7 +107,8 @@ img {
     border-radius: 24px;
     margin: 20px auto;
     max-width: 1240px;
-    border: 3px solid #d2c4ff; /* Фіолетова рамка як на макеті */
+    border: 3px solid #d2c4ff;
+    /* Фіолетова рамка як на макеті */
 }
 
 .hero-container {
@@ -134,7 +135,7 @@ img {
 
 .hero-image img {
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* --- ВІДЕО-БЛОК --- */
@@ -165,7 +166,7 @@ img {
     background-color: #ffffff;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,8 +210,8 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-     max-width: 1200px;
-    margin: 0 auto;            
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -256,42 +257,20 @@ img {
 /* --- ВІДГУК (TESTIMONIAL) --- */
 
 
-  .testimonial-section {
-    background: #ebe6fb;          /* лавандовий фон з макета */
+.testimonial-section {
+    background: #ebe6fb;
     padding: 40px 20px;
     text-align: center;
-  }
+}
 
-  .testimonial-img {
+.testimonial-img {
     display: block;
     width: 100%;
-    max-width: 677px;             /* оригінальна ширина фрагмента */
-    height: auto;                 /* зберігає пропорції на мобільних */
-    margin: 0 auto;
-  }
-
-
-.testimonial-section {
-    padding: 40px 0 80px;
-}
-
-.testimonial-card {
-    background-color: #a145b8;
-    border-radius: 20px;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    max-width: 900px;
+    max-width: 677px;
+    height: auto;
     margin: 0 auto;
 }
 
-.testimonial-card .avatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
 .quote-content {
     position: relative;
@@ -453,6 +432,7 @@ img {
 
 /* --- АДАПТИВНІСТЬ (RESPONSIVE) --- */
 @media (max-width: 992px) {
+
     .hero-container,
     .cta-container,
     .features-grid {
