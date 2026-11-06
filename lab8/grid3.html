@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>CSS Animation Example</title> 
+ <style> 
+ /* Визначення ключових кадрів для анімації */ 
+ @keyframes bounce { 
+ 0% { transform: translateY(0); background-color: rgb(140, 161, 168); } 
+ 50% { transform: translateY(-50px); background-color: rgb(2, 104, 2); } 
+ 100% { transform: translateY(0); background-color: rgb(218, 24, 159); }  } 
+ .animated-box { 
+ width: 600px; 
+ height: 600px; 
+ background-color: rgb(33, 133, 167); 
+ margin: 50px auto; 
+  
+ /* Властивості анімації */ 
+ animation-name: bounce; /* Назва анімації */  animation-duration: 2s; /* Тривалість анімації */  animation-timing-function: ease-in-out;/* Швидкість зміни анімації */ 
+ animation-delay: 1s; /* Затримка перед початком */ 
+ animation-iteration-count: infinite; /* Кількість повторень */  animation-direction: alternate; /* Напрямок анімації */ 
+ animation-fill-mode: both; /* Стиль анімації до і після */ 
+ animation-play-state: running; /* Статус анімації */  } 
+ </style> 
+</head>
+<body> 
+ <div class="animated-box"></div> 
+</body> 
+</html> 
