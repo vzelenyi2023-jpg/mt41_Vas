@@ -1,12 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #ededf3;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -37,7 +37,7 @@ body {
 
 .events_grid {
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
     align-items: start;
 }
@@ -61,31 +61,26 @@ body {
     min-height: 98px;
     width: 100%;
     padding: 13px 8px;
-
     background-color: white;
     color: #0074b9;
-
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     border-bottom: 1px dotted #252a78;
 }
 
 .event h3 {
     background-color: #f5f5f5;
     color: #0074b9;
-
     font-size: 17px;
     font-weight: normal;
     line-height: 20px;
-
     padding: 13px 15px;
+    margin: 0;
 }
 
 #news_container {
@@ -138,12 +133,9 @@ body {
     position: absolute;
     bottom: 0;
     left: 10px;
-
     padding: 3px 5px;
-
     background-color: #777;
     color: white;
-
     font-size: 9px;
     font-weight: bold;
     line-height: 1.2;
@@ -153,10 +145,8 @@ body {
 .news h3 {
     padding: 8px 10px 10px;
     margin: 0;
-
     background-color: #f5f5f5;
     color: #0084c7;
-
     font-size: 12px;
     font-weight: bold;
     line-height: 1.2;
@@ -165,4 +155,36 @@ body {
 .news a:hover h3 {
     color: #005580;
     text-decoration: underline;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .events_grid,
+    .news_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .events_title {
+        font-size: 24px;
+    }
+
+    .news_title {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .events_grid,
+    .news_grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .events_title {
+        font-size: 21px;
+    }
+
+    .news_title {
+        font-size: 16px;
+    }
 }
