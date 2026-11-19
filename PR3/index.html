@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="World Trivia — перевір свої знання та дізнайся цікаві факти про світ!">
+    <title>World Trivia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">World Trivia</h1>
+
+        <nav aria-label="Головна навігація">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h1>Welcome to World Trivia!</h1>
+
+            <p>
+                Ласкаво просимо до World Trivia — місця, де ви можете
+                перевірити свої знання, дізнатися цікаві факти та
+                позмагатися з іншими учасниками у різноманітних
+                вікторинах. Обирайте категорію та починайте гру!
+            </p>
+        </section>
+
+        <section id="trivia">
+            <h2>Interesting Trivia</h2>
+
+            <div class="trivia-container">
+
+                <article class="trivia-item">
+                    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=400"
+                        alt="Зоряне небо та космос">
+                    <div>
+                        <h3>Space Facts</h3>
+                        <p>
+                            Космос сповнений загадок. Чи знали ви,
+                            що світлу від Сонця потрібно приблизно
+                            8 хвилин, щоб досягти Землі?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="trivia-item">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=400"
+                        alt="Гори та озеро серед природи">
+                    <div>
+                        <h3>Nature Facts</h3>
+                        <p>
+                            Природа дивує своїм різноманіттям.
+                            На Землі існують мільйони видів
+                            живих організмів.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="trivia-item">
+                    <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=400"
+                        alt="Історична архітектура">
+                    <div>
+                        <h3>History Facts</h3>
+                        <p>
+                            Історія людства налічує тисячі років.
+                            Кожна цивілізація залишила свій
+                            унікальний слід у світі.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Trivia Categories</h2>
+
+            <ul class="categories-list">
+                <li><a href="#trivia">Science</a></li>
+                <li><a href="#trivia">History</a></li>
+                <li><a href="#trivia">Geography</a></li>
+                <li><a href="#trivia">Sports</a></li>
+                <li><a href="#trivia">Technology</a></li>
+                <li><a href="#trivia">Nature</a></li>
+            </ul>
+        </section>
+
+        <section id="scores">
+            <h2>Top Scores</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alex</td>
+                        <td>950</td>
+                        <td>Ukraine</td>
+                        <td>Science</td>
+                        <td>15.11.2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Maria</td>
+                        <td>900</td>
+                        <td>Poland</td>
+                        <td>History</td>
+                        <td>14.11.2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>John</td>
+                        <td>850</td>
+                        <td>USA</td>
+                        <td>Geography</td>
+                        <td>13.11.2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Anna</td>
+                        <td>800</td>
+                        <td>Germany</td>
+                        <td>Nature</td>
+                        <td>12.11.2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="subscribe">
+            <h2>Puzzle of the Day</h2>
+
+            <p>
+                Хочете щодня отримувати нові цікаві загадки
+                та перевіряти свої знання?
+            </p>
+
+            <button class="subscribe-button" type="button">
+                Subscribe Now!
+            </button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <p>
+                Маєте запитання або пропозиції?
+                Напишіть нам!
+            </p>
+
+            <form class="contact-form">
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 World Trivia. All rights reserved.</p>
+        <p>Test your knowledge. Discover the world!</p>
+    </footer>
+
+</body>
+
+</html>
