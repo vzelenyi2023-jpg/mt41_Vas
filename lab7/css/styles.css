@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-/* Хедер (блок подій) */
 #events_container {
     width: 100%;
     min-height: 100vh;
@@ -100,14 +99,13 @@ body {
     transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* При наведенні на картку/текст події біле поле стає трохи синім */
+
 .event a:hover .event_date,
 .event a:hover h3 {
     background-color: #dcebfa;
     color: #004c7a;
 }
 
-/* Секція новин */
 #news_container {
     width: 100%;
     padding: 35px 20px 60px;
@@ -192,7 +190,6 @@ body {
     text-decoration: underline;
 }
 
-/* Планшети */
 @media (max-width: 1023px) {
     .events_grid,
     .news_grid {
@@ -209,7 +206,6 @@ body {
     }
 }
 
-/* Смартфони */
 @media (max-width: 767px) {
     .events_grid,
     .news_grid {
