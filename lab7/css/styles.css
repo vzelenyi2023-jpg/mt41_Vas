@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ededf3;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto Condensed, sans-serif;
 }
 
 .container {
@@ -47,10 +47,10 @@ body {
 }
 
 .events_grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: inline-flex;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 30px;
-    align-items: stretch;
+    align-items: flex-start;
 }
 
 .event a {
@@ -178,7 +178,7 @@ body {
     margin: 0;
     background-color: #f5f5f5;
     color: #0084c7;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 1.2;
     transition: background-color 0.25s ease, color 0.25s ease;
